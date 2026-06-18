@@ -1,0 +1,306 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backend Developer</title>
+  <meta name="description" content="Landing page moderna de portfólio para Desenvolvedor Backend: APIs robustas, escalabilidade e arquitetura de software." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide icons (inline via JS) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="bg">
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--a"></div>
+    <div class="bg__glow bg__glow--b"></div>
+    <div class="bg__noise"></div>
+  </div>
+
+  <header class="header" data-header>
+    <a class="brand" href="#top" aria-label="Voltar ao topo">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span class="brand__name">Backend</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação">
+      <a class="nav__link" href="#projetos">Projetos</a>
+      <a class="nav__link" href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn--primary btn--sm" href="#contato">
+      <i data-lucide="sparkles" class="btn__icon" aria-hidden="true"></i>
+      Falar comigo
+    </a>
+
+    <button class="navToggle" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero" aria-label="Introdução">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="eyebrow" data-reveal="fade-up">
+            <span class="eyebrow__chip">Arquitetura • Automação • Performance</span>
+          </div>
+
+          <h1 class="h1" data-reveal="fade-up" data-reveal-delay="80">
+            Rafael Oliveira
+          </h1>
+
+          <p class="lead" data-reveal="fade-up" data-reveal-delay="160">
+            Desenvolvedor Backend focado em Node.js, APIs REST e automações.
+          </p>
+
+          <div class="cta" data-reveal="fade-up" data-reveal-delay="220">
+            <a class="btn btn--primary" href="#projetos">
+              <i data-lucide="rocket" class="btn__icon" aria-hidden="true"></i>
+              Ver Projetos
+            </a>
+            <a class="btn btn--ghost" href="#contato">
+              <i data-lucide="mail" class="btn__icon" aria-hidden="true"></i>
+              Entrar em Contato
+            </a>
+          </div>
+
+          <div class="hero__meta" data-reveal="fade-up" data-reveal-delay="280">
+            <div class="metaCard">
+              <div class="metaCard__top">
+                <i data-lucide="database" class="metaCard__icon" aria-hidden="true"></i>
+                <span class="metaCard__label">Backend-first</span>
+              </div>
+              <span class="metaCard__value">APIs escaláveis</span>
+            </div>
+
+            <div class="metaCard">
+              <div class="metaCard__top">
+                <i data-lucide="cpu" class="metaCard__icon" aria-hidden="true"></i>
+                <span class="metaCard__label">Qualidade</span>
+              </div>
+              <span class="metaCard__value">Testes & automação</span>
+            </div>
+
+            <div class="metaCard metaCard--highlight">
+              <div class="metaCard__top">
+                <i data-lucide="zap" class="metaCard__icon" aria-hidden="true"></i>
+                <span class="metaCard__label">Entrega</span>
+              </div>
+              <span class="metaCard__value">Deploy com confiança</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__side" aria-label="Destaques de stack">
+          <div class="panel" data-reveal="zoom-in" data-reveal-delay="120">
+            <div class="panel__header">
+              <span class="panel__title">Tecnologias</span>
+              <span class="panel__pill">Node.js • Express • NestJS</span>
+            </div>
+
+            <div class="stackList" aria-label="Lista de habilidades">
+              <div class="stackItem" tabindex="0" role="button" aria-label="HTML5">
+                <span class="stackItem__badge">HTML5</span>
+              </div>
+              <div class="stackItem" tabindex="0" role="button" aria-label="CSS3">
+                <span class="stackItem__badge">CSS3</span>
+              </div>
+              <div class="stackItem" tabindex="0" role="button" aria-label="JavaScript">
+                <span class="stackItem__badge">JavaScript</span>
+              </div>
+              <div class="stackItem" tabindex="0" role="button" aria-label="TypeScript">
+                <span class="stackItem__badge">TypeScript</span>
+              </div>
+              <div class="stackItem" tabindex="0" role="button" aria-label="Node.js">
+                <span class="stackItem__badge">Node.js</span>
+              </div>
+              <div class="stackItem" tabindex="0" role="button" aria-label="Express">
+                <span class="stackItem__badge">Express</span>
+              </div>
+              <div class="stackItem" tabindex="0" role="button" aria-label="NestJS">
+                <span class="stackItem__badge">NestJS</span>
+              </div>
+            </div>
+
+            <div class="panel__footer">
+              <div class="stat">
+                <div class="stat__num">∞</div>
+                <div class="stat__label">Refinamento contínuo</div>
+              </div>
+              <div class="panelSocial" aria-label="Redes sociais">
+                <a class="panelSocial__link" href="https://www.linkedin.com/in/rafael-oliveira-35107930b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i data-lucide="linkedin" aria-hidden="true"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a class="panelSocial__link" href="https://github.com/FrosT-999" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--projects" id="projetos" aria-label="Projetos">
+      <div class="container">
+        <div class="sectionHead sectionHead--projects" data-reveal="fade-up">
+          <h2 class="h2">Projetos</h2>
+          <p class="sectionHead__subtitle">Uma amostra de soluções que priorizam qualidade, performance e escalabilidade.</p>
+        </div>
+
+        <div class="grid grid--projects" role="list">
+          <article class="projectCard" data-reveal="fade-up" role="listitem" tabindex="0">
+            <div class="projectCard__top">
+              <h3 class="projectCard__title">Landing Page Barbearia</h3>
+              <div class="projectCard__badges">
+                <span class="badge">HTML</span>
+                <span class="badge badge--accent">CSS</span>
+                <span class="badge">JavaScript</span>
+              </div>
+            </div>
+
+            <p class="projectCard__desc">
+              Landing page moderna e responsiva desenvolvida para uma barbearia premium, com foco em conversão de visitantes em agendamentos.
+            </p>
+
+            <div class="projectCard__actions">
+              <a class="githubBtn" href="https://github.com/FrosT-999?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="githubBtn__icon" aria-hidden="true"></i>
+                <span>Ver Repositório</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section" id="stack" aria-label="Tech stack">
+      <div class="container">
+        <div class="sectionHead" data-reveal="fade-up">
+          <h2 class="h2">Tech Stack</h2>
+          <p class="sectionHead__subtitle">
+            Habilidades focadas em construção de APIs, performance, manutenção e arquitetura.
+          </p>
+        </div>
+
+        <div class="grid grid--stack" role="list">
+          <article class="techCard" data-reveal="fade-up" tabindex="0" role="listitem">
+            <div class="techCard__top">
+              <i data-lucide="layout" aria-hidden="true"></i>
+              <span class="techCard__name">HTML5</span>
+            </div>
+            <p class="techCard__desc">Estruturas semânticas e acessibilidade.</p>
+          </article>
+
+          <article class="techCard" data-reveal="fade-up" tabindex="0" role="listitem" style="--hover: 190">
+            <div class="techCard__top">
+              <i data-lucide="palette" aria-hidden="true"></i>
+              <span class="techCard__name">CSS3</span>
+            </div>
+            <p class="techCard__desc">Design responsivo com alto padrão.</p>
+          </article>
+
+          <article class="techCard" data-reveal="fade-up" tabindex="0" role="listitem" style="--hover: 255">
+            <div class="techCard__top">
+              <i data-lucide="code" aria-hidden="true"></i>
+              <span class="techCard__name">JavaScript</span>
+            </div>
+            <p class="techCard__desc">Ecossistema moderno e automações.</p>
+          </article>
+
+          <article class="techCard" data-reveal="fade-up" tabindex="0" role="listitem" style="--hover: 280">
+            <div class="techCard__top">
+              <i data-lucide="shield" aria-hidden="true"></i>
+              <span class="techCard__name">TypeScript</span>
+            </div>
+            <p class="techCard__desc">Tipagem e robustez no código.</p>
+          </article>
+
+          <article class="techCard" data-reveal="fade-up" tabindex="0" role="listitem" style="--hover: 210">
+            <div class="techCard__top">
+              <i data-lucide="server" aria-hidden="true"></i>
+              <span class="techCard__name">Node.js</span>
+            </div>
+            <p class="techCard__desc">Construção de serviços e integrações.</p>
+          </article>
+
+          <article class="techCard" data-reveal="fade-up" tabindex="0" role="listitem" style="--hover: 250">
+            <div class="techCard__top">
+              <i data-lucide="swatchbook" aria-hidden="true"></i>
+              <span class="techCard__name">Express</span>
+            </div>
+            <p class="techCard__desc">APIs rápidas e arquitetura pragmática.</p>
+          </article>
+
+          <article class="techCard" data-reveal="fade-up" tabindex="0" role="listitem" style="--hover: 310">
+            <div class="techCard__top">
+              <i data-lucide="layers" aria-hidden="true"></i>
+              <span class="techCard__name">NestJS</span>
+            </div>
+            <p class="techCard__desc">Estrutura escalável e manutenção fácil.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer class="footer" id="contato" aria-label="Contato">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__left" data-reveal="fade-up">
+            <h2 class="h2 h2--footer">Contato direto</h2>
+            <p class="footer__subtitle">
+              Vamos construir algo escalável. Me envie um e-mail ou conecte nas redes.
+            </p>
+
+            <div class="contactBadges" role="list">
+              <div class="contactBadge" role="listitem">
+                <i data-lucide="mail" class="contactBadge__icon" aria-hidden="true"></i>
+                <span>Resposta rápida</span>
+              </div>
+              <div class="contactBadge" role="listitem">
+                <i data-lucide="message-square" class="contactBadge__icon" aria-hidden="true"></i>
+                <span>Arquitetura bem definida</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__right" data-reveal="fade-up" data-reveal-delay="120">
+            <div class="linkGrid" role="list">
+              <a class="socialLink" role="listitem" href="rafaelrodrigo33r@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="mail" class="socialLink__icon" aria-hidden="true"></i>
+                <div class="socialLink__text">
+                  <span class="socialLink__title">Gmail</span>
+                  <span class="socialLink__desc">Clique para enviar</span>
+                </div>
+                <i data-lucide="arrow-right" class="socialLink__arrow" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="footerBottom" aria-label="Rodapé">
+              <span class="footerBottom__muted">© <span id="year"></span> Rafael Oliveira. Feito com foco em backend.</span>
+              <a class="footerBottom__top" href="#top">Voltar ao topo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
+
